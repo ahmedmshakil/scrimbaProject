@@ -1,6 +1,8 @@
 import React from 'react';
-import ReactDOM from 'react-dom';
+import { createRoot } from 'react-dom/client';
 import SearchMovies from "./searchMovies";
+import './index.css';
+
 
 class Main extends React.Component {
   render() {
@@ -13,4 +15,6 @@ class Main extends React.Component {
   }
 }
 
-ReactDOM.render(<Main />, document.getElementById('root'));
+// ReactDOM.render(<Main />, document.getElementById('root'));
+const root = createRoot(document.getElementById('root'));
+root.render(<Main />);
